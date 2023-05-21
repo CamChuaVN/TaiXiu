@@ -1,0 +1,8 @@
+name: TaiXiu
+main: camchua.taixiu.v2.TaiXiu
+version: 1.0
+author: [CamChua_VN]
+depend: [Vault]
+
+commands:
+  taixiu:

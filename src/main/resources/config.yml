@@ -1,0 +1,113 @@
+Settings:
+  #5 phút lắc 1 lần
+  Interval: 300
+  
+  Broadcast:
+    120: "&f&l<&d&l!&f&l> &aTài xỉu sẽ bắt đầu trong &f2 &aphút"
+    5: "&f&l<&d&l!&f&l> &aTài xỉu sẽ bắt đầu trong &f5 &agiây"
+    4: "&f&l<&d&l!&f&l> &aTài xỉu sẽ bắt đầu trong &f4 &agiây"
+    3: "&f&l<&d&l!&f&l> &aTài xỉu sẽ bắt đầu trong &f3 &agiây"
+    2: "&f&l<&d&l!&f&l> &aTài xỉu sẽ bắt đầu trong &f2 &agiây"
+    1: "&f&l<&d&l!&f&l> &aTài xỉu sẽ bắt đầu trong &f1 &agiây"
+  
+  Format:
+    Tai: "Tài"
+    Xiu: "Xỉu"
+  
+  Win:
+    #Phần thưởng khi thắng
+    NormalMultiplier: 0.96 #(0.96 = 96% = x1.96 số tiền đặt cược)
+    
+    #Phần thưởng khi thắng số kép
+    DoubleMultiplier: 2.5 #(2.5 = 250% = x3.5 số tiền đặt cược)
+    
+    #Phần thưởng khi thắng số kép 3
+    DoubleMultiplier: 4.0 #(4.0 = 400% = x5 số tiền đặt cược)
+  
+  #Làm tròn số
+  #
+  # #.# = 11.2345 -> 11.2
+  # #.## = 11.2345 -> 11.23
+  FixDouble: "#.#"
+  
+  #Mức cược thấp nhất
+  MinBet: 1000
+  
+  #Khoảng thời gian giữa 2 lần đặt cược (tính bằng giây)
+  BetCooldown: 5
+  
+  #Nếu 2 bên chênh lệnh hơn 100000$ thì bên thấp 100% ăn
+  WinRate: 100000
+    
+
+Message:
+  NotMoney: "&f&l<&d&l!&f&l> &7Cut', k0 c0' tien` ma` d0i` ch0i a`"
+  
+  InvaildMoney: "&f&l<&d&l!&f&l> &7Số tiền nhập phải lớn hơn &f1000"
+  
+  NoBet: "&f&l<&d&l!&f&l> &7Bạn không thể đặt cược vào lúc này"
+  
+  BetCooldown: "&f&l<&d&l!&f&l> &7Vui lòng chờ &f<s> &7giây để tiếp tục cược"
+  
+  Bet: "&f&l<&d&l!&f&l> &aBạn vừa đặt cược &f<type>\n&f&l<&d&l!&f&l> &aSố tiền đặt &f<type> &acủa bạn: &f<money>$"
+  BetBroadcast: "&f&l<&d&l!&f&l> &aNgười chơi &f<player> &avừa đặt &f<type> &avới số tiền &f<money>$"
+  
+  BetDouble: "&f&l<&d&l!&f&l> &aBạn vừa đặt số kép &f<type>\n&f&l<&d&l!&f&l> &aTiền đặt số kép &f<type> &acủa bạn: &f<money>$"
+  BetDoubleBroadcast: "&f&l<&d&l!&f&l> &aNgười chơi &f<player> &avừa đặt số kép &f<type> &avới số tiền &f<money>$"
+  
+  BetTripple: "&f&l<&d&l!&f&l> &aBạn vừa đặt số kép 3 &f<type>\n&f&l<&d&l!&f&l> &aTiền đặt số kép &f<type> &acủa bạn: &f<money>$"
+  BetTrippleBroadcast: "&f&l<&d&l!&f&l> &aNgười chơi &f<player> &avừa đặt số kép 3 &f<type> &avới số tiền &f<money>$"
+  
+  Win: "&f&l<&d&l!&f&l> &aBạn vừa thắng &f<type> &avới số tiền &f<money>$"
+  WinDouble: "&f&l<&d&l!&f&l> &aBạn vừa thắng số kép &f<type> &avới số tiền &f<money>$"
+  WinTripple: "&f&l<&d&l!&f&l> &aBạn vừa thắng số kép 3 &f<type> &avới số tiền &f<money>$"
+  
+  Refund: "&f&l<&d&l!&f&l> &aBạn được trả lại tiền cược tài xỉu"
+  
+  WinBroadcast:
+  - "&f"
+  - "<result>"
+  - "&f"
+  - "&f&l<&d&l!&f&l> &aKết quả: &f<type> &athắng"
+  - "&f&l<&d&l!&f&l> &aNhững người chơi chiến thắng: &f<winner>"
+  - "&f"
+  - "&f&l<&d&l!&f&l> &aNhững người chơi chiến thắng số kép: &f<winner_d>"
+  - "&f"
+  - "&f&l<&d&l!&f&l> &aNhững người chơi chiến thắng số kép 3: &f<winner_t>"
+  
+  Help:
+  - "&a/taixiu tai <tiền> &f- Đặt tài"
+  - "&a/taixiu xiu <tiền> &f- Đặt xỉu"
+  - "&a/taixiu 11/22/33/44/55/66 <tiền> &f- Đặt số kép"
+  - "&a/taixiu 111/222/333/444/555/666 <tiền> &f- Đặt số kép 3"
+  - "&a/taixiu status &f- Xem số tiền bạn đã đặt cược và thời gian còn lại"
+  - "&aNếu 2 xí ngầu giống nhau là số kép"
+  - "&aNếu 3 xí ngầu giống nhau là số kép 3"
+  - "&f"
+  - "&a/taixiu reload &f- Reload plugins (admin)"
+  - "&a/taixiu check &f- Xem tổng số tiền đã đặt cược và thời gian còn lại (admin)"
+  
+  Info:
+  - "&f&l<&d&l!&f&l> &aTài: &f<tai>$"
+  - "&f&l<&d&l!&f&l> &aXỉu: &f<xiu>$"
+  - "&f&l<&d&l!&f&l> &aSố kép 11: &f<d1>$ | &aSố kép 111: &f<t1>$"
+  - "&f&l<&d&l!&f&l> &aSố kép 22: &f<d2>$ | &aSố kép 222: &f<t2>$"
+  - "&f&l<&d&l!&f&l> &aSố kép 33: &f<d3>$ | &aSố kép 333: &f<t3>$"
+  - "&f&l<&d&l!&f&l> &aSố kép 44: &f<d4>$ | &aSố kép 444: &f<t4>$"
+  - "&f&l<&d&l!&f&l> &aSố kép 55: &f<d5>$ | &aSố kép 555: &f<t5>$"
+  - "&f&l<&d&l!&f&l> &aSố kép 66: &f<d6>$ | &aSố kép 666: &f<t6>$"
+  - "&f&l<&d&l!&f&l> &aThời gian còn lại: &f<time> &agiây"
+
+
+
+Format:
+  1: "&f⬛⬛⬛⬛⬛\n&f⬛⬛⬛⬛⬛\n&f⬛⬛&0⬛&f⬛⬛\n&f⬛⬛⬛⬛⬛\n&f⬛⬛⬛⬛⬛"
+  2: "&f⬛⬛⬛⬛⬛\n&f⬛&0⬛&f⬛⬛⬛\n&f⬛⬛⬛⬛⬛\n&f⬛⬛⬛&0⬛&f⬛\n&f⬛⬛⬛⬛⬛"
+  3: "&f⬛⬛⬛⬛⬛\n&f⬛&0⬛&f⬛⬛⬛\n&f⬛⬛&0⬛&f⬛⬛\n&f⬛⬛⬛&0⬛&f⬛\n&f⬛⬛⬛⬛⬛"
+  4: "&f⬛⬛⬛⬛⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛⬛⬛⬛⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛⬛⬛⬛⬛"
+  5: "&f⬛⬛⬛⬛⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛⬛&0⬛&f⬛⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛⬛⬛⬛⬛"
+  6: "&f⬛⬛⬛⬛⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛&0⬛&f⬛&0⬛&f⬛\n&f⬛⬛⬛⬛⬛"
+
+  #In 3 xí ngầu trên cùng 1 dòng
+  Dice: "<dice1>   <dice2>   <dice3>"
+  
